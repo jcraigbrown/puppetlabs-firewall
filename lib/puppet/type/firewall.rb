@@ -442,8 +442,8 @@ Puppet::Type.newtype(:firewall) do
     :state_match) do
 
     desc <<-EOS
-      Matches a packet based on its state in the firewall stateful inspection
-      table. Values can be:
+      Matches a packet based on its connection tracking state in the firewall
+      stateful inspection table. Values can be:
 
       * INVALID
       * ESTABLISHED
